@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --lime: #cafe48;
+    /* Primary font color */
+    --cyan: #3bf4fb;
+    --purple: #ad0cd9;
+    --green: #136f63;
+    /* Backround */
+    --blue: #446df6;
+    /* Secondary font color */
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--green);
+    font-family: "Outfit";
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vmin;
+    background-color: gold;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.3)
+}
+
+.links-container {
+    width: 60vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 3vmin;
+    font-weight: bold;
+    position: relative;
+    color: rebeccapurple;
+}
+
+.link::after {
+    content: "";
+    background-color: var(--cyan);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: 0.2s;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--purple);
+}
+
+.link:hover:after,
+.link:focus::after {
+    background-color: var(--cyan);
+    width: 100%;
+
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    margin: 5vmin 5vmin 0 5vmin;
+    animation: fade_in 1s ease-in;
+}
+
+.c3-logo {
+    width: 12vmin;
+    margin-right: 2vmin;
+}
+
+.title {
+    font-size: 10vmin;
+    letter-spacing: 1vmin;
+    color: midnightblue;
+}
+
+.author-name {
+    font-size: 4vmin;
+    font-weight: bold;
+    color: var(--lime);
+    animation: fade_in 1s ease-in;
+}
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.author-name:hover {
+    color: gold;
+}
+
+.cheese-image {
+    width: 10vmin;
+    animation: fade_in 2s ease-in;
+}
+
+.questions-container {
+    margin: 5vmin;
+    border: var(--purple) 3px solid;
+    border-radius: 20px;
+    padding-top: 2vmin;
+}
+
+.question-box {
+    margin: 0 3vmin 3vmin 3vmin;
+    width: 100vmin;
+}
+
+.question {
+    font-size: 4vmin;
+    color: var(--cyan);
+}
+
+.answer {
+    margin: 2vmin 2vmin 2vmin 0;
+    font-size: 2vmin;
+    color: var(--blue);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 12vmin;
+    background-color: var(--lime);
+    width: 100%;
+    box-shadow: 0 -4px 2px 0 rgba(0, 0, 0, 0.3)
+}
+
+h3{
+    font-size: 1.5vmin;
+    margin-top: 2vmin;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4vmin;
+}
+
+.project{
+    margin: 2vmin;
+}
+
+.project-title{
+    color: var(--blue);
+    font-size: 7vmin;
+    letter-spacing: 5px;
+}
+
+.project-description{
+    font-size: 3vmin;
+    margin: 2vmin 2vmin 2vmin 0;
+}
+
+.game-image{
+    width: 80vmin;
+    height: 40vmin;
+}
+
+.centered-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: midnightblue;
+    letter-spacing: 0.5vmin;
+    font-size: 3.5vmin;
+}
+
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about-paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5vmin;
+    color: var(--cyan);
+}
+
+.about-paragraph2{
+    width: 75vmin;
+    border: solid var(--blue) 3px;
+    padding: 2vmin;
+    border-radius: 10px;
+    
+}
